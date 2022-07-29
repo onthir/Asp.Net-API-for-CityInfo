@@ -146,9 +146,36 @@ namespace CityInfo.API.Controllers
                 return BadRequest(ModelState);
             }
 
+            if(!TryValidateModel(pointOfInterestToPatch)){
+                return BadRequest(ModelState);
+            }
+
             pointOfInterestFromStore.Name = pointOfInterestToPatch.Name;
             pointOfInterestFromStore.Description = pointOfInterestToPatch.Description;
 
+            return NoContent();
+        }
+
+
+        // deleting a resource
+        [HttpDelete("{pid}")]
+        public ActionResult DeletePointOfInterest(int cityId, int pid){
+            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            if (city == null)
+            {
+                return NotFound();
+            }
+
+            var pointOfInterestFromStore = city.PointsOfInterest
+                    .FirstOrDefault(c => c.Id == pid);
+
+            if (pointOfInterestFromStore == null)
+            {
+                return NotFound();
+            }
+
+            // execute delete
+            city.PointsOfInterest.Remove(pointOfInterestFromStore);
             return NoContent();
         }
 
