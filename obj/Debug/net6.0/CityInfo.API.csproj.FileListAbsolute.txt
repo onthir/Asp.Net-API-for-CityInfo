@@ -25,3 +25,7 @@
 \\vroamvan01\FolderRedirects\Documents\VHP\bbhandari\Documents\Duth\CityInfo.API\obj\Debug\net6.0\CityInfo.API.pdb
 \\vroamvan01\FolderRedirects\Documents\VHP\bbhandari\Documents\Duth\CityInfo.API\obj\Debug\net6.0\CityInfo.API.genruntimeconfig.cache
 \\vroamvan01\FolderRedirects\Documents\VHP\bbhandari\Documents\Duth\CityInfo.API\obj\Debug\net6.0\ref\CityInfo.API.dll
+\\vroamvan01\FolderRedirects\Documents\VHP\bbhandari\Documents\Duth\CityInfo.API\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+\\vroamvan01\FolderRedirects\Documents\VHP\bbhandari\Documents\Duth\CityInfo.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+\\vroamvan01\FolderRedirects\Documents\VHP\bbhandari\Documents\Duth\CityInfo.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+\\vroamvan01\FolderRedirects\Documents\VHP\bbhandari\Documents\Duth\CityInfo.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
